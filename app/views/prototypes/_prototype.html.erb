@@ -1,0 +1,11 @@
+<div class="proto_index">
+  <%= link_to image_tag(prototype.image, class: :proto_image), prototype_path(prototype.id) %>
+  <div class="proto_index_all">
+    <%= link_to prototype.title, prototype_path(prototype.id), class: :proto_title %>
+    <p class="proto_catch_copy">
+      <%= prototype.catch_copy %>
+    </p>
+    <%= link_to "by #{prototype.user.name}", "/users/#{prototype.user.id}", class: :proto_user  %>
+  </div>
+</div>
+
